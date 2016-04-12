@@ -13,7 +13,7 @@
 Use this container as a base for your application. Below is an example Dockerfile:
 
 ```
-FROM docker pull pitchanon/docker-mysql:5.5
+FROM pitchanon/docker-mysql:5.5
 ... OR ...
 5.6, 5.7 or latest
 ```
