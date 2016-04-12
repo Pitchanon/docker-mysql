@@ -1,4 +1,4 @@
-FROM mysql/mysql-server:5.5
+FROM mysql/mysql-server:5.6
 
 MAINTAINER Pitchanon D <Pitchanon.d@gmail.com>
 
