@@ -4,32 +4,36 @@
 
 ## Components
 
-- MySQL Server 5.5 (tag: 5.5)
-- MySQL Server 5.6 (tag: 5.6)
-- MySQL Server 5.7, the latest GA version (tag: 5.7 or latest)
+- MySQL Server 5.5 (tag: **5.5**)
+- MySQL Server 5.6 (tag: **5.6**)
+- MySQL Server **5.7**, the latest GA version (tag: **5.7** or **latest**)
 
 ## Running & Building
 ### Using this container as a base
 Use this container as a base for your application. Below is an example Dockerfile:
 
-```
+```dockerfile
 FROM pitchanon/docker-mysql:5.5
 ... OR ...
 5.6, 5.7 or latest
 ```
 
-##### Add `env_file:` in `docker-compose.yml`
+##### docker-compose.yml
 
-```
+Add `env_file:` in `docker-compose.yml`.
+
+```yml
 mysql:
-  build: ./mysql
+  image: pitchanon/docker-mysql:5.5
   ports:
     - 33006:3306
   env_file:
     - ./env/docker.env # environment-specific
 ```
 
-##### Create file env `docker.env`
+##### docker.env
+
+Create file env `docker.env`.
 
 ```
 #docker.env
