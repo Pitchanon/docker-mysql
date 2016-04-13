@@ -1,4 +1,4 @@
-# docker mysql
+# Docker: mysql
 
 - [Docker Hub](https://hub.docker.com/r/pitchanon/docker-mysql/)
 
